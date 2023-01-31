@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY MANAGEMENT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">
+<table class="table">
+    <tr class="table-row">
+        <td>
+            <form onsubmit="event.preventDefault(); onFormSubmit();" >
+                <H1>ADD DETAILS</H1>
+                <div class="container">
+                    <hr>            
+                    <label id="label" for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required >
+            
+                    <label id="label" for="author"><b>City</b></label>
+                    <input type="text" placeholder="Enter Author name" name="author" id="author" required >
+                    <hr>
+                    <button type="submit" name="submit"class="registerbtn">Submit</button>
+                </div>
+            </form>
+        </td> 
+    </tr>
+    
+</table>
+</div>
+<div class="flex-output">
+ <td>
+            <table  id="bookList">
+                <h1 id="listout">BOOK LIST</h1>
+                <thead id="tab_head">
+                        <tr>
+                            <th>Name</th>
+                            <th>author</th>
+                            <th>Delete</th>
+                        </tr>
+                </thead>
+                <tbody id="tab_body">
+                </tbody>
+                
+            </table>
+        </td>
+        </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
